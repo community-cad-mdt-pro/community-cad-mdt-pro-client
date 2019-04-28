@@ -1,5 +1,5 @@
 const commonPaths = require('./common-paths');
-
+require('@babel/polyfill');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -11,11 +11,18 @@ const config = {
     path: commonPaths.outputPath,
     publicPath: '/'
   },
+  node: {
+    fs: 'empty',
+    net: 'empty',
+    tls: 'empty'
+  },
   module: {
+    exprContextRegExp: /$^/,
+    exprContextCritical: false,
     rules: [
       {
         test: /\.(js)$/,
-        exclude: /node_modules/,
+        // exclude: /node_modules/,
         use: ['babel-loader']
       }
     ]

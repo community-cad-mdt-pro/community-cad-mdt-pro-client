@@ -3,20 +3,9 @@ import {Login} from './login';
 import '../../../scss/components/home.scss';
 import logo from '../../../assets/bnrp_white.png';
 
-
 export function Home() {
     return (
         <div>
-            <div
-                id='particles-background'
-                className='vertical-centered-box'
-            >
-            </div>
-            <div
-                id='particles-foreground'
-                className = 'vertical-centered-box'
-            >
-            </div>
             <div className='vertical-centered-box'>
                 <div className='content'>
                     <img

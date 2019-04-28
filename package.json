@@ -9,15 +9,37 @@
     "build:bundleanalyzer": "yarn build -- --env.addons=bundleanalyzer",
     "dev": "webpack-dev-server --progress --colors --env.env=dev"
   },
+  "engines": {
+    "node": ">=8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rswyatt/OpenCAD-React.git"
+  },
+  "main": "./src/index.js",
+  "files": [
+    "/config",
+    "/dist",
+    "/src",
+    "/scss",
+    "/assets"
+  ],
   "dependencies": {
+    "@phc/pbkdf2": "^1.1.14",
+    "axios": "^0.18.0",
+    "config": "^3.1.0",
     "cookie-parser": "~1.4.3",
+    "hashifier": "^1.0.0",
     "mobx": "^5.9.4",
     "mobx-react": "^5.4.3",
+    "mysql": "^2.17.1",
     "mysql2": "^1.6.5",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-router-dom": "^5.0.0"
+    "react-router-dom": "^5.0.0",
+    "sweetalert2": "^8.9.0",
+    "upash": "^1.0.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.3",
