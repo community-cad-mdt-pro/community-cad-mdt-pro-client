@@ -7,7 +7,8 @@
     "prebuild": "rimraf dist",
     "build": "cross-env NODE_ENV=production webpack -p --env.env=prod",
     "build:bundleanalyzer": "yarn build -- --env.addons=bundleanalyzer",
-    "dev": "webpack-dev-server --progress --colors --env.env=dev"
+    "dev": "webpack-dev-server --progress --colors --env.env=dev",
+    "start": "npm run build && node ./dist/index.js"
   },
   "engines": {
     "node": ">=8"

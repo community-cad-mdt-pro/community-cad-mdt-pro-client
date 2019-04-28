@@ -1,3 +1,4 @@
+import {configuration} from '../../../config/configuration';
 import {actions as userActions, select as userSelect} from '../stores/user';
 import axios from 'axios';
 
@@ -23,9 +24,10 @@ async function createUser(user) {
 }
 
 export async function validateLogin(email, password) {
+    const server = configuration[process.env.NODE_ENV].serverHost;
     userActions.startLoading();
 
-    const user = await axios.post('http://localhost:9998/user/validate', {email, password});
+    const user = await axios.post(`${server}/user/validate`, {email, password});
 
     if (!user) {
         return false;
