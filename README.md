@@ -1,12 +1,12 @@
-# OpenCAD-React
-Reactified Version of OpenCAD
+# Community CAD/MDT Pro - Client
+This is the UI Client for Community CAD/MDT Pro.
 
 ## Requirements
-* Must have https://github.com/rswyatt/opencad-react-server.git installed and configured.
+* Must have [Community CAD/MDT Pro](https://github.com/community-cad-mdt-pro/community-cad-mdt-pro-server) installed and configured.
 * `Node >= 8`
 
 ## Installation
-* Install [OpenCAD React Server](https://github.com/rswyatt/opencad-react-server.git)
+* Install [OpenCAD React Server](https://github.com/community-cad-mdt-pro/community-cad-mdt-pro-server)
 * Set up your server host in `/config/configuration.js`
 
 ## Customization
