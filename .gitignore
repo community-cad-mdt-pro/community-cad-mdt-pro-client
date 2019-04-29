@@ -3,6 +3,7 @@
 # ide
 /.idea
 
+
 # dependencies
 /node_modules
 /.pnp
@@ -14,6 +15,9 @@
 # production
 /build
 /dist
+
+# overrides
+/overrides/*
 
 # misc
 .DS_Store

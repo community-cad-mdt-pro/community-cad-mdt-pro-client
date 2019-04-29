@@ -85,3 +85,34 @@
   background-image: -webkit-linear-gradient(45deg, #3a0c0c 2%, #1e0000 100%);
   background-image: linear-gradient(45deg, #3a0c0c 2%, #1e0000 100%);
 }
+
+h1 {
+  color: #fff;
+
+  &.main-site-title {
+    font-size: 300%;
+    margin-bottom: 50px;
+  }
+}
+
+
+
+.vertical-centered-box .content {
+  color: #fff;
+  text-align: center;
+
+  small {
+    display: block;
+    font-weight: normal;
+    margin-bottom: 35px;
+  }
+
+  .bottom-area {
+    margin-top: 60px;
+
+    a {
+      color: #fff;
+      margin: 10px 15px;
+    }
+  }
+}
