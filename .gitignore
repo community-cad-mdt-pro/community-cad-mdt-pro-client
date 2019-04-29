@@ -17,7 +17,7 @@
 /dist
 
 # overrides
-/overrides/*
+assets/overrides/*
 
 # misc
 .DS_Store
